@@ -13,7 +13,7 @@
   <style>
     label {
       display: inline-block;
-      width:200px ;
+      width: 200px;
       color: blue;
       font-family: 'Courier New', Courier, monospace;
       font-weight: bolder;
@@ -24,11 +24,11 @@
       background-color: antiquewhite;
       text-align: left;
     }
-    div{
+
+    div {
       padding: 10px;
       align-items: left;
     }
-
   </style>
 
 </head>
@@ -40,7 +40,7 @@
       <a href="./index.html">Home</a>
     </nav>
   </header>
-  <form method="POST" action="http://127.0.0.1:5500/form.html">
+  <form method="POST" action="http://localhost:3000/profile">
     <div id="fNamediv" name="fName-div"><label for="fName">First Name:</label>
       <input type="text" id="fName" name="fName" required><br>
     </div>
@@ -64,7 +64,7 @@
       <label id=vehicle-selection" for="vehicle-selection">Vehicle Owned:</label>
     </div>
     <div id="Vehicle-chk-box" name="Vehicle-chk-box">
-    
+
       <label for="chk-honda">Honda</label>
       <input type="checkbox" id="chk-honda" name="owned-vehicle" value="honda">
       <label for="chk-yamaha">Yamaha</label>
@@ -74,7 +74,7 @@
     </div>
     <div id="vehicle-type-div" name="vehicle-type-div">
       <label for="vehicle-type">Choose a Vehicle:</label>
-      
+
       <select name="vehicle-type" id="vehicle-type">
         <option value="car">Car</option>
         <option value="ute">Push Bike</option>
@@ -82,14 +82,14 @@
         <option value="motorbike">Motor Bike</option>
       </select>
     </div>
-    <div id="submit-div name="submit-div>
-    <button type="submit">Submit form</button>
+    <div id="submit-div name=" submit-div>
+      <button type="submit">Submit form</button>
     </div>
   </form>
-    <main>
+  <main>
 
-    </main>
-    <footer>Copyright &copy; 2024</footer>
+  </main>
+  <footer>Copyright &copy; 2024</footer>
 </body>
 
 </html>
