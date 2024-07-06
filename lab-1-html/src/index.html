@@ -1,20 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" title="Module 2 HTML Lab1">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="IOD Module 2 HTML Lab1" />
+  <meta name="keywords" content="HTML" />
+  <meta name="author" content="Tanmay Patel" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      text-align: center;
+
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
+      <a href="./form.html">User Details</a>
     </nav>
   </header>
+  <h1>My HTML Learning Journey</h1>
+  <article>
+    <h2>Learning HTMl Tags - Meta, header,Div,li</h2>
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
 
-  <main>
-    
-  </main>
+    <span>Span1</span>
+    <span>Span2</span>
+    <span>Span4</span>
+    <p>p represents paragraph without preserving spacing .</p>
+    <pre>
+      Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks  .
+    </pre>
+    <ul>
+      <li>Tanmay Patel</li>
+      <li>Patel Tanmay</li>
+      <li>Mr Tanmay Patel</li>
+    </ul>
+
+    <ol>
+      <li>Tanmay Patel</li>
+      <li>Patel Tanmay</li>
+      <li>
+        Other Names
+        <ol>
+          <li>Mr Four Square</li>
+          <li>Mr GAS</li>
+        </ol>
+      </li>
+    </ol>
+  </article>
+  <article>
+    <h2>Learning HTMl Tables</h2>
+    <table>
+      <thead>
+        <th colspan="2">First Header(colspan=2)</th>
+        <th>Second Header</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First Cell - First Row</td>
+          <td>Second Cell - First Row</td>
+          <td>Third Cell - First Row</td>
+        </tr>
+        <tr>
+          <td>First Cell - Second Row</td>
+          <td>Second Cell -Second Row</td>
+          <td>Third Cell Cell - Second Row</td>
+        </tr>
+        <tr>
+          <td colspan="2">First Cell - Third Row with Colspan=2</td>
+          <td>Second Cell - Third Row</td>
+    </table>
+    </tr>
+    </tbody>
+    </table>
+  </article>
+  <article>
+    <h2>HTML Media Tag</h2>
+    <img src="https://picsum.photos/400/400" alt="" height="300" width="300" />
+    <img src="./assets/html_lab_image.jpg" alt="" height="300" width="300" />
+    <video controls autoplay width="250">
+      <source src="/assets/flower.webm" type="video/webm">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <audio controls autoplay>
+      <source src="/assets/t-rex-roar.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+
+  </article>
+  <main></main>
 
   <footer>Copyright &copy; 2024</footer>
 </body>

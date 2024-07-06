@@ -1,21 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN-US">
 
 <head>
+  <title>
+    HTML elements - Forms - form, input, label, select, option, button
+  </title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="IOD Module 2 HTML Lab1 Form Action" />
+  <meta name="keywords" content="HTML-Form Action" />
+  <meta name="author" content="Tanmay Patel" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    label {
+      display: inline-block;
+      width:200px ;
+      color: blue;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      text-align: right;
+    }
+
+    input {
+      background-color: antiquewhite;
+      text-align: left;
+    }
+    div{
+      padding: 10px;
+      align-items: left;
+    }
+
+  </style>
+
 </head>
 
 <body>
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
+      <a href="./index.html">Home</a>
     </nav>
   </header>
+  <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div id="fNamediv" name="fName-div"><label for="fName">First Name:</label>
+      <input type="text" id="fName" name="fName" required><br>
+    </div>
+    <div id="lName-div" name="lNamediv">
+      <label for="lName">Last Name:</label>
+      <input type="text" id="lName" name="lName" required><br>
+    </div>
+    <div>
+      <label id=lang-selection" for="lang-selection">Favorite Language:</label>
+    </div>
+    <div id="lang-radio-div" name="lang-radio-div">
 
-  <main>
-  </main>
+      <label for="radio-html">HTML</label>
+      <input type="radio" id="radio-html" name="fav-language" value="html">
+      <label for="radio-css">CSS</label>
+      <input type="radio" id="radio-css" name="fav-language" value="css">
+      <label for="radio-css">JAVA</label>
+      <input type="radio" id="radio-java" name="fav-language" value="java">
+    </div>
+    <div>
+      <label id=vehicle-selection" for="vehicle-selection">Vehicle Owned:</label>
+    </div>
+    <div id="Vehicle-chk-box" name="Vehicle-chk-box">
+    
+      <label for="chk-honda">Honda</label>
+      <input type="checkbox" id="chk-honda" name="owned-vehicle" value="honda">
+      <label for="chk-yamaha">Yamaha</label>
+      <input type="checkbox" id="chk-yamaha" name="owned-vehicle" value="yamaha">
+      <label for="chk-suzuki">Suzuki</label>
+      <input type="checkbox" id="chk-suzuki" name="owned-vehicle" value="suzuki">
+    </div>
+    <div id="vehicle-type-div" name="vehicle-type-div">
+      <label for="vehicle-type">Choose a Vehicle:</label>
+      
+      <select name="vehicle-type" id="vehicle-type">
+        <option value="car">Car</option>
+        <option value="ute">Push Bike</option>
+        <option value="truck">Truck</option>
+        <option value="motorbike">Motor Bike</option>
+      </select>
+    </div>
+    <div id="submit-div name="submit-div>
+    <button type="submit">Submit form</button>
+    </div>
+  </form>
+    <main>
 
-  <footer>Copyright &copy; 2024</footer>
+    </main>
+    <footer>Copyright &copy; 2024</footer>
 </body>
 
 </html>
